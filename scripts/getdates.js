@@ -9,7 +9,7 @@ const day = document.querySelector("#day");
 const dayofweek = document.querySelector("#dayofweek");
 
 
-const lastModified = document.querySelector('#lastModified')
+const lastModified = document.querySelector('#lastmodified')
 const dateLastModified = new Date(document.lastModified);
 
 
@@ -46,4 +46,4 @@ month.innerHTML = `<span class="highlight">${today.getMonth()}</span>`;
 day.innerHTML = `<span class="highlight">${today.getDate()}</span>`;
 dayofweek.innerHTML = `<span class="highlight">${today.getDay()}</span>`;
 
-lastModified.innerHTML = `${dateLastModified}`
+lastModified.textContent = `${dateLastModified}`
