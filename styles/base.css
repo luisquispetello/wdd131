@@ -146,4 +146,5 @@ main {
 footer {
   display: flex;
   gap: 2rem;
+  padding: 0 40px;
 }
