@@ -8,4 +8,4 @@ const dateLastModified = new Date(document.lastModified);
 
 
 currentYear.textContent = today.getFullYear();
-lastModified.textContent = `Last modification: ${dateLastModified}`;
+lastModified.textContent = `Last modification: ${dateLastModified.toLocaleString()}`;
