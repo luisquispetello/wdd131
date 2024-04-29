@@ -143,14 +143,6 @@ main {
   padding: 0;
 }
 
-.content {
-  grid: 2 /4;
-}
-
-.sidebar {
-  grid: 1 / 2;
-}
-
 footer {
   display: flex;
   gap: 2rem;
