@@ -15,6 +15,7 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 figure {
@@ -89,6 +90,7 @@ nav ul li a:hover {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
   gap: 2rem;
   margin: 0;
   padding: 0;
@@ -99,12 +101,14 @@ main {
   gap: 2rem;
 }
 
-.wrapper img {
-  width: 140px;
+.profile-photo {
+  max-width: 140px;
+  height: fit-content;
 }
 
 .flag {
-  max-width: 140px;
+  width: 140px;
+  height: fit-content;
 }
 
 .myname {
@@ -147,5 +151,22 @@ main {
 footer {
   display: flex;
   gap: 2rem;
-  padding: 0 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (width < 900px) {
+  .container {
+    justify-content: flex-start;
+    margin: 1.5rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0;
+  }
 }
