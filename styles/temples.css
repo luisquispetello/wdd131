@@ -110,8 +110,9 @@ footer {
   .mobile-nav-toggle {
     display: block;
 
+    position: absolute;
+
     z-index: 9999;
-    position: fixed;
     top: 4rem;
     right: 4rem;
 
@@ -127,6 +128,7 @@ footer {
 
   .mobile-nav-toggle[aria-expanded='true'] {
     background-image: url("/images/cross.svg");
+    position: fixed;
 
   }
 }
