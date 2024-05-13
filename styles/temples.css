@@ -125,12 +125,12 @@ footer {
     filter: brightness(100);
 
     background-color: transparent;
-    background-image: url("images/hamburger-menu.svg");
+    background-image: url("/images/hamburger-menu.svg");
     background-size: contain;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("images/cross.svg");
+    background-image: url("/images/cross.svg");
     position: fixed;
   }
 }
