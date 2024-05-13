@@ -1,0 +1,132 @@
+html {
+  color-scheme: light dark;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  font-family: Inter, system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  width: min(1160px, 100% - 4rem);
+  margin: 2rem auto;
+
+  overflow-x: hidden;
+}
+
+main {
+  padding-inline: 2rem;
+}
+
+.auto-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+}
+
+header {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+ul[class] {
+  list-style: none;
+  margin: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.primary-nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+footer {
+
+  margin-top: 4rem;
+  text-align: center;
+  color: #666666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 48rem) {
+  .primary-nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(2rem);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    flex-direction: column;
+    gap: 2rem;
+    padding: min(30vh, 10rem) 2rem;
+  }
+
+  .primary-nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+
+    z-index: 9999;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+
+    border: 0;
+    width: 2rem;
+    aspect-ratio: 1;
+    filter: brightness(100);
+
+    background-color: transparent;
+    background-image: url("/images/hamburger-menu.svg");
+    background-size: contain;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url("/images/cross.svg");
+
+  }
+}
