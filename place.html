@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Luis Quispe">
+  <meta name="description" content="Temples album from The Church of JesusChrist">
+  <title>Navarra</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/place.css">
+  <!-- <link rel="stylesheet" href="styles/temples-large.css"> -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script defer src="scripts/place.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Navarra, Spain</h1>
+  </header>
+
+  <main class="grid">
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 40rem)" srcset="images/hero-lg.webp">
+        <img src="images/hero-sm.webp" alt="">
+      </picture>
+    </section>
+
+    <section class="data card">
+      <h2>Data</h2>
+      <table>
+        <tr>
+          <td>Area:</td>
+          <td>10,391 km2</td>
+        </tr>
+        <tr>
+          <td>Population:</td>
+          <td>661,537</td>
+        </tr>
+        <tr>
+          <td>Capital:</td>
+          <td>Pamplona</td>
+        </tr>
+        <tr>
+          <td>Languages:</td>
+          <td>Spanish and Euskera</td>
+        </tr>
+      </table>
+    </section>
+    
+    <section class="weather card">
+      <h2>Weather <span><img class="weather-icon" src="images/weather-icon.svg" alt="" ></span></h2>
+      <table>
+        <tr>
+          <td>Temperature:</td>
+          <td>10 °C</td>
+        </tr>
+        <tr>
+          <td>Conditions:</td>
+          <td>Partly Cloud</td>
+        </tr>
+        <tr>
+          <td>Wind:</td>
+          <td>5 km/h</td>
+        </tr>
+        <tr>
+          <td>Wind Chill:</td>
+          <td id="wind-chill"></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <span id="currentyear"></span> - Luis Quispe Tello - Spain
+    </p>
+    <p>
+      <span id="lastmodified"></span>
+    </p>
+  </footer>
+</body>
+
+</html>
