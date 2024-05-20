@@ -38,7 +38,7 @@ header {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   background-color: #333333;
 }
 
@@ -59,13 +59,16 @@ main {
 
 .card {
   padding: 1rem;
-  background: hsl(0 0% 100% / 0.1);
+  background: hsla(0, 0%, 0%, 0.5);
   backdrop-filter: blur(2rem);
-  border-radius: 1rem;
-  /* box-shadow: 0 0 0.3rem 0rem #cacaca; */
-  width: max-content;
   margin: 1rem;
+  min-width: max-content;
   color: var(--secondary-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
 .card h2 {
@@ -106,11 +109,8 @@ footer {
 
   .card {
     padding: 1rem;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(2rem);
-    border-radius: 1rem;
-    width: max-content;
     margin: 1rem;
+    min-width: 20rem;
   }
 
   .weather-icon {
