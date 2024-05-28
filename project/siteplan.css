@@ -53,8 +53,9 @@ h2 {
   text-align: center;
 }
 hr {
+  height: 3px;
   margin: 32px 0;
-  background: var(--accent1-color);
+  background: var(--accent2-color);
 }
 header {
   padding: 1em;
