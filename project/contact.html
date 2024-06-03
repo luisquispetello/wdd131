@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Random Quote Generator</title>
+  <title>Contact | Random Quote Generator</title>
   <meta name="description" content="Random Quotes Generator Webpage">
   <meta name="author" content="Luis Quispe">
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
@@ -44,16 +44,24 @@
         </ul>
       </nav>
     </header>
-
     <main>
-      <div class="quote-container">
-        <h2>Quote of the Day</h2>
-        <p id="quote"></p>
-        <p id="author"></p>
+      <div class="contact-form">
+        <div class="content">
+          <h2>Contact</h2>
+          <p>Tell us a new quote to add</p>
+          <img src="../images/socrates.jpg" alt="socrates" loading="lazy">
+        </div>
+        <form id="quote-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-      <button id="new-quote">Generate Quote</button>
     </main>
-
     <footer>
       <p>
         <span id="currentyear"></span> - Luis Quispe Tello - Spain
