@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to load and display multiple quotes on the All Quotes page
   const displayMultipleQuotes = async () => {
     const quotesGrid = document.querySelector(".quotes-grid");
+
+    // reset the cards 
     quotesGrid.innerHTML = "";
 
     for (let i = 0; i < 9; i++) {
